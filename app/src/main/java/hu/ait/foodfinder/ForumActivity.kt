@@ -83,4 +83,9 @@ class ForumActivity : AppCompatActivity() {
             }
         }
     }
+
+    override fun onStop() {
+        super.onStop()
+        filterExpiredItems()
+    }
 }
