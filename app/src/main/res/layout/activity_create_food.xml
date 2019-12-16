@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_write_post"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name_of_food"
+                android:maxLines="1"
+                android:textColor="@color/textBlack" />
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/amount_of_food"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:scrollHorizontally="false"
+                android:textColor="@color/textBlack" />
+
+            <EditText
+                android:id="@+id/etLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/location_of_food"
+                android:textColor="@color/textBlack" />
+
+            <Spinner
+                android:id="@+id/spTimes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/timer_values"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/textBlack" />
+
+            <ImageView
+                android:id="@+id/imgAttach"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnAttach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/attach_image" />
+
+            <Button
+                android:id="@+id/btnLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/choose_location" />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/done" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
